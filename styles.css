@@ -1,0 +1,22 @@
+:root {
+  --bg: #0f1115; --fg: #e5e7eb; --muted:#9ca3af; --brand:#8b5cf6; --card:#151821; --line:#232735;
+}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,Segoe UI,Roboto,Arial}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+header{position:sticky;top:0;background:rgba(15,17,21,.8);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid var(--line);}
+.nav{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 24px}
+.nav a{color:var(--fg);text-decoration:none;padding:8px 12px;border-radius:10px}
+.nav a.active, .btn{background:var(--brand);color:#fff}
+.btn{border:0;padding:10px 14px;border-radius:12px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.card .body{padding:16px}
+.badge{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.input, select, textarea{width:100%;background:#0e1014;color:var(--fg);border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+.form{display:grid;gap:12px;max-width:560px}
+.footer{border-top:1px solid var(--line);padding:24px;text-align:center;color:var(--muted)}
+.empty{opacity:.8;border:1px dashed var(--line);border-radius:12px;padding:20px;text-align:center}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{border-bottom:1px solid var(--line);padding:10px;text-align:left}
+.status-Approved{color:#22c55e}.status-Pending{color:#eab308}.status-Draft{color:#9ca3af}.status-Rejected{color:#ef4444}
